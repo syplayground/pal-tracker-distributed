@@ -7,11 +7,14 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestOperations;
 import org.springframework.web.client.RestTemplate;
 
+import org.springframework.cloud.client.loadbalancer.LoadBalanced;
+
 
 @Configuration
 public class RestConfig {
 
     @Bean
+    @LoadBalanced
     public RestOperations restOperations() {
         return new RestTemplate();
     }
