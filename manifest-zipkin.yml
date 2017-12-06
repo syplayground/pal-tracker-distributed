@@ -1,0 +1,8 @@
+applications:
+ - name: zipkin-server
+   path: ./platform-services/zipkin-server/build/libs/zipkin-server.jar
+   host: zipkin-server-sy
+   memory: 1G
+   instances: 1
+   services:
+    - tracker-amqp
