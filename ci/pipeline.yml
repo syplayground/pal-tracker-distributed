@@ -4,7 +4,7 @@ resources:
   type: git
   source:
     uri: {{github-repository}}
-    branch: my-work
+    branch: my-work2
     private_key: {{github-private-key}}
 
 - name: version
